@@ -15,6 +15,7 @@
           <execution>
             <id>default-cli</id>
             <configuration>
+              <categoryFileURL>file:/./category.xml</categoryFileURL>
               <artifacts>
                 <!-- specify your depencies here -->
                 <!-- groupId:artifactId:version -->
