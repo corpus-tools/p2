@@ -1,6 +1,7 @@
-# p2
-Update site for P2-ified artifacts
+# This is the P2 repository for *corpus-tools.org* products and dependencies
 
-## The `master` branch includes the scripts needed to build p2 artifacts
+In order to use the plugins and features contained in this repository, simply add the following URL to the Install Wizard in Eclipse: <http://corpus-tools.org/p2/>.
 
-## The `gh-pages` branch contains the actual P2 Update Site
+The branch for the actual repository on GitHub is [`gh-pages`](https://github.com/corpus-tools/p2/tree/gh-pages)!
+
+The branch where build script and POM are kept is [`master`](https://github.com/corpus-tools/p2/tree/master)!
