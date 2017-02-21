@@ -2,8 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.corpus-tools.p2</groupId>
   <artifactId>site</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>pom</packaging>
+
+  <properties><pepper.version>3.1.0</pepper.version></properties>
   
   <build>
     <plugins>
@@ -15,14 +17,16 @@
           <execution>
             <id>default-cli</id>
             <configuration>
+              <!-- Use custom category.xml, renaming the feature -->
               <categoryFileURL>file:/./category.xml</categoryFileURL>
               <artifacts>
-                <!-- specify your depencies here -->
-                <!-- groupId:artifactId:version -->
+                <!-- Dependencies for Atomic .logging plugin -->
                 <artifact><id>com.lmax:disruptor:3.3.2</id></artifact>
                 <artifact><id>net.sdruskat:net.sdruskat.fragment.sun.misc:1.0.0</id></artifact>
+
+                <!-- Pepper (for Atomic) and dependencies -->
                 <artifact>
-                  <id>org.corpus-tools:pepper-lib:3.1.0</id>
+                  <id>org.corpus-tools:pepper-lib:${pepper.version}</id>
                   <transitive>true</transitive>
                   <excludes>
                     <exclude>org.eclipse.equinox:ds::</exclude>
@@ -39,6 +43,8 @@
                     <exclude>org.eclipse.equinox:preferences::</exclude>
                   </excludes>
                 </artifact>
+
+                <!-- Testing dependencies for Atomic -->
                 <artifact><id>com.github.hazendaz:javabean-tester:1.4.0</id></artifact>
               </artifacts>
             </configuration>
