@@ -18,7 +18,7 @@
             <id>default-cli</id>
             <configuration>
               <!-- Use custom category.xml, renaming the feature -->
-              <categoryFileURL>file:/./category.xml</categoryFileURL>
+              <categoryFileURL>${basedir}/category.xml</categoryFileURL>
               <artifacts>
                 <!-- Dependencies for Atomic .logging plugin -->
                 <artifact><id>com.lmax:disruptor:3.3.2</id></artifact>
@@ -46,6 +46,10 @@
 
                 <!-- Testing dependencies for Atomic -->
                 <artifact><id>com.github.hazendaz:javabean-tester:1.4.0</id></artifact>
+
+                <!-- Third-party dependencies -->
+                <artifact><id>org.eclipse.collections:eclipse-collections-api:8.0.0</id><transitive>true</transitive></artifact>
+                <artifact><id>org.eclipse.collections:eclipse-collections:8.0.0</id><transitive>true</transitive></artifact>
               </artifacts>
             </configuration>
           </execution>
@@ -59,4 +63,10 @@
       <url>http://repo.reficio.org/maven/</url>
     </pluginRepository>
   </pluginRepositories> 
+  <!--<repositories>
+  <repository>
+    <id>snapshots</id>
+    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+  </repository>
+</repositories>-->
 </project>
