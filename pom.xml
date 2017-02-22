@@ -7,6 +7,7 @@
   <packaging>pom</packaging>
   <properties>
     <pepper.version>3.1.0</pepper.version>
+    <graphannis.version>0.1.0</graphannis.version>
   </properties>
   <build>
     <plugins>
@@ -51,6 +52,12 @@
                 </artifact>
                 <!-- Testing dependencies for Atomic -->
                 <artifact><id>com.github.hazendaz:javabean-tester:1.4.0</id></artifact>
+                
+                <!-- graphANNIS dependencies -->
+                <artifact><id>org.corpus-tools:graphannis-api:${graphannis.version}</id></artifact>
+                <artifact><id>org.corpus-tools:graphannis-api:jar:linux-x86_64:${graphannis.version}</id></artifact>
+                <artifact><id>org.corpus-tools:graphannis-api:jar:macosx-x86_64:${graphannis.version}</id></artifact>
+                <artifact><id>org.corpus-tools:graphannis-api:jar:windows-x86_64:${graphannis.version}</id></artifact>
 
                 <!-- Third-party dependencies -->
                 <artifact><id>org.eclipse.collections:eclipse-collections-api:8.0.0</id><transitive>true</transitive></artifact>
