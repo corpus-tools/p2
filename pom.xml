@@ -7,7 +7,10 @@
   <packaging>pom</packaging>
   <properties>
     <pepper.version>3.1.0</pepper.version>
+    
+    <github.global.server>github</github.global.server>
   </properties>
+  
   <build>
     <plugins>
       <plugin>
@@ -60,13 +63,14 @@
           </execution>
         </executions>
       </plugin>
+
       <plugin>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
         <version>9.4.1.v20170120</version>
         <configuration>
           <scanIntervalSeconds>10</scanIntervalSeconds>
-          <webAppSourceDirectory>${basedir}/target/repository/</webAppSourceDirectory>
+          <webAppSourceDirectory>${project.basedir}/target/repository/</webAppSourceDirectory>
           <webApp>
             <contextPath>/site</contextPath>
           </webApp>
@@ -75,6 +79,28 @@
           </httpConnector>
         </configuration>
       </plugin>
+
+      <plugin>
+        <groupId>com.github.github</groupId>
+        <artifactId>site-maven-plugin</artifactId>
+        <version>0.12</version>
+        <configuration>
+          <message>Creating site for ${project.version}</message>
+          <outputDirectory>${project.basedir}/target/repository/</outputDirectory>
+          <repositoryOwner>corpus-tools</repositoryOwner>
+          <repositoryName>p2</repositoryName>
+          
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>site</goal>
+            </goals>
+            <phase>site</phase>
+          </execution>
+        </executions>
+      </plugin>      
+      
     </plugins>
   </build>
 </project>
