@@ -5,3 +5,13 @@ In order to use the plugins and features contained in this repository, simply ad
 The branch for the actual repository on GitHub is [`gh-pages`](https://github.com/corpus-tools/p2/tree/gh-pages)!
 
 The branch where build script and POM are kept is [`master`](https://github.com/corpus-tools/p2/tree/master)!
+
+## Howto deploy
+
+If you are a developer and updated the artifacts included in this repository, run
+
+```
+mvn clean p2:site site
+```
+
+to make sure that the updates are pushed to the GitHub pages.
