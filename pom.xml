@@ -23,14 +23,9 @@
               <categoryFileURL>${project.basedir}/category.xml</categoryFileURL>
               <artifacts>
                 <!-- Dependencies for Atomic .logging plugin -->
-                <artifact>
-                  <id>com.lmax:disruptor:3.3.2</id>
-                </artifact>
-                <!-- TODO: this artifact is not in any configured maven repos, do we really need it?
-                <artifact>
-                  <id>net.sdruskat:net.sdruskat.fragment.sun.misc:1.0.0</id>
-                </artifact>
-                -->
+                <artifact><id>com.lmax:disruptor:3.3.2</id></artifact>
+                <artifact><id>net.sdruskat:net.sdruskat.fragment.sun.misc:1.0.0</id></artifact>
+
                 <!-- Pepper (for Atomic) and dependencies -->
                 <artifact>
                   <id>org.corpus-tools:pepper-lib:${pepper.version}</id>
@@ -50,6 +45,7 @@
                     <exclude>org.eclipse.equinox:preferences::</exclude>
                   </excludes>
                 </artifact>
+
                 <!-- Testing dependencies for Atomic -->
                 <artifact><id>com.github.hazendaz:javabean-tester:1.4.0</id></artifact>
                 
@@ -127,9 +123,16 @@
           </execution>
         </executions>
       </plugin>
-
-      
-      
     </plugins>
   </build>
+  <repositories>
+    <repository>
+      <id>snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </repository>
+    <repository>
+      <id>sdruskat.net</id>
+      <url>http://sdruskat.net/maven2/</url>
+    </repository>
+  </repositories>
 </project>
