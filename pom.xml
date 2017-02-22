@@ -4,9 +4,9 @@
   <artifactId>site</artifactId>
   <version>1.0.1</version>
   <packaging>pom</packaging>
-
-  <properties><pepper.version>3.1.0</pepper.version></properties>
-  
+  <properties>
+    <pepper.version>3.1.0</pepper.version>
+  </properties>
   <build>
     <plugins>
       <plugin>
@@ -18,12 +18,16 @@
             <id>default-cli</id>
             <configuration>
               <!-- Use custom category.xml, renaming the feature -->
-              <categoryFileURL>${basedir}/category.xml</categoryFileURL>
+              <categoryFileURL>${project.basedir}/category.xml</categoryFileURL>
               <artifacts>
                 <!-- Dependencies for Atomic .logging plugin -->
-                <artifact><id>com.lmax:disruptor:3.3.2</id></artifact>
-                <artifact><id>net.sdruskat:net.sdruskat.fragment.sun.misc:1.0.0</id></artifact>
-
+                  <id>com.lmax:disruptor:3.3.2</id>
+                </artifact>
+                <!-- TODO: this artifact is not in any configured maven repos, do we really need it?
+                <artifact>
+                  <id>net.sdruskat:net.sdruskat.fragment.sun.misc:1.0.0</id>
+                </artifact>
+                -->
                 <!-- Pepper (for Atomic) and dependencies -->
                 <artifact>
                   <id>org.corpus-tools:pepper-lib:${pepper.version}</id>
