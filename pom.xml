@@ -56,8 +56,8 @@
                 <artifact><id>org.corpus-tools:graphannis-api:jar:windows-x86_64:${graphannis.version}</id></artifact>
 
                 <!-- Third-party dependencies -->
-                <artifact><id>org.eclipse.collections:eclipse-collections-api:8.0.0</id><transitive>true</transitive></artifact>
-                <artifact><id>org.eclipse.collections:eclipse-collections:8.0.0</id><transitive>true</transitive></artifact>
+                <artifact><id>org.eclipse.collections:eclipse-collections-api:8.1.0-SNAPSHOT</id><transitive>true</transitive></artifact>
+                <artifact><id>org.eclipse.collections:eclipse-collections:8.1.0-SNAPSHOT</id><transitive>true</transitive></artifact>
               </artifacts>
             </configuration>
           </execution>
