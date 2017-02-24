@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.corpus-tools.p2</groupId>
@@ -30,6 +30,7 @@
                 <artifact>
                   <id>org.corpus-tools:pepper-lib:${pepper.version}</id>
                   <transitive>true</transitive>
+                  <source>true</source>
                   <excludes>
                     <exclude>org.eclipse.equinox:ds::</exclude>
                     <exclude>org.eclipse.core:jobs::</exclude>
@@ -50,7 +51,10 @@
                 <artifact><id>com.github.hazendaz:javabean-tester:1.4.0</id></artifact>
                 
                 <!-- graphANNIS dependencies -->
-                <artifact><id>org.corpus-tools:graphannis-api:${graphannis.version}</id></artifact>
+                <artifact>
+                  <id>org.corpus-tools:graphannis-api:${graphannis.version}</id>
+                  <source>true</source>
+                </artifact>
                 <artifact><id>org.corpus-tools:graphannis-api:jar:linux-x86_64:${graphannis.version}</id></artifact>
                 <artifact><id>org.corpus-tools:graphannis-api:jar:macosx-x86_64:${graphannis.version}</id></artifact>
                 <artifact><id>org.corpus-tools:graphannis-api:jar:windows-x86_64:${graphannis.version}</id></artifact>
