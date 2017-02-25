@@ -7,7 +7,7 @@
   <packaging>pom</packaging>
   <properties>
     <pepper.version>3.1.0</pepper.version>
-    <graphannis.version>0.1.0</graphannis.version>
+    <graphannis.version>0.2.0-SNAPSHOT</graphannis.version>
   </properties>
   <build>
     <plugins>
@@ -54,10 +54,10 @@
                 <artifact>
                   <id>org.corpus-tools:graphannis-api:${graphannis.version}</id>
                   <source>true</source>
+                  <excludes>
+                    <exclude>org.bytedeco:javacpp::</exclude>  
+                  </excludes>
                 </artifact>
-                <artifact><id>org.corpus-tools:graphannis-api:jar:linux-x86_64:${graphannis.version}</id></artifact>
-                <artifact><id>org.corpus-tools:graphannis-api:jar:macosx-x86_64:${graphannis.version}</id></artifact>
-                <artifact><id>org.corpus-tools:graphannis-api:jar:windows-x86_64:${graphannis.version}</id></artifact>
 
                 <!-- Third-party dependencies -->
                 <artifact><id>org.eclipse.collections:eclipse-collections-api:8.1.0-SNAPSHOT</id><transitive>true</transitive></artifact>
