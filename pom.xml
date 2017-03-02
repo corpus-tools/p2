@@ -25,6 +25,7 @@
                 <!-- Dependencies for Atomic .logging plugin -->
                 <artifact><id>com.lmax:disruptor:3.3.2</id></artifact>
                 <artifact><id>net.sdruskat:net.sdruskat.fragment.sun.misc:1.0.0</id></artifact>
+                <artifact><id>org.antlr:antlr4-runtime:4.6</id></artifact>
 
                 <!-- Pepper (for Atomic) and dependencies -->
                 <artifact>
