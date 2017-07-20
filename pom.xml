@@ -7,14 +7,14 @@
   <packaging>pom</packaging>
   <properties>
     <pepper.version>3.1.0</pepper.version>
-    <graphannis.version>0.2.0</graphannis.version>
+    <graphannis.version>0.3.0</graphannis.version>
   </properties>
   <build>
     <plugins>
       <plugin>
         <groupId>org.reficio</groupId>
         <artifactId>p2-maven-plugin</artifactId>
-        <version>1.1.1</version>
+        <version>1.2.0</version>
         <executions>
           <execution>
             <id>default-cli</id>
@@ -55,6 +55,7 @@
                 <artifact>
                   <id>org.corpus-tools:graphannis-api:${graphannis.version}</id>
                   <source>true</source>
+                  <transitive>true</transitive>
                   <excludes>
                     <exclude>org.bytedeco:javacpp::</exclude>  
                   </excludes>
