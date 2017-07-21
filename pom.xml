@@ -7,7 +7,7 @@
   <packaging>pom</packaging>
   <properties>
     <pepper.version>3.1.0</pepper.version>
-    <graphannis.version>0.3.0</graphannis.version>
+    <graphannis.version>0.4.0-SNAPSHOT</graphannis.version>
   </properties>
   <build>
     <plugins>
@@ -50,12 +50,11 @@
 
                 <!-- Testing dependencies for Atomic -->
                 <artifact><id>com.github.hazendaz:javabean-tester:1.4.0</id></artifact>
-                
+
                 <!-- graphANNIS dependencies -->
                 <artifact>
                   <id>org.corpus-tools:graphannis-api:${graphannis.version}</id>
                   <source>true</source>
-                  <transitive>true</transitive>
                   <excludes>
                     <exclude>org.bytedeco:javacpp::</exclude>  
                   </excludes>
@@ -64,6 +63,7 @@
                 <!-- Third-party dependencies -->
                 <artifact><id>org.eclipse.collections:eclipse-collections-api:8.1.0-SNAPSHOT</id><transitive>true</transitive></artifact>
                 <artifact><id>org.eclipse.collections:eclipse-collections:8.1.0-SNAPSHOT</id><transitive>true</transitive></artifact>
+
               </artifacts>
             </configuration>
           </execution>
@@ -138,10 +138,6 @@
       <snapshots>
         <updatePolicy>always</updatePolicy>
       </snapshots>
-    </repository>
-    <repository>
-      <id>sdruskat.net</id>
-      <url>http://sdruskat.net/maven2/</url>
     </repository>
   </repositories>
 </project>
