@@ -7,6 +7,8 @@ if [[ $rc -ne 0 ]] ; then
 fi
 read -p "Enter directory where 'corpus-tools/p2' has been cloned to (must be on branch 'gh-pages'): " -e -i ../corpus-tools-p2 DIR
 echo "Moving target to $DIR."
+# directory with files can't be overwritten by "mv"
+rm -r $DIR/plugins
 mv ./target/repository/* $DIR
 rm -r ./target
 echo "Done."
