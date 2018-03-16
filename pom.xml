@@ -7,7 +7,7 @@
   <packaging>pom</packaging>
   <properties>
     <pepper.version>3.1.0</pepper.version>
-    <graphannis.version>0.4.0</graphannis.version>
+    <graphannis.version>0.6.0</graphannis.version>
   </properties>
   <build>
     <plugins>
