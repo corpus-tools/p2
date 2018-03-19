@@ -8,7 +8,11 @@ The branch where build script and POM are kept is [`master`](https://github.com/
 
 ## Build
 
-Builds are facilitated by running the `build-and-copy-to-sibling.sh` script.
+For the corpus-tools-p2 site, changes are picked up by Jenkins and deployed.
+
+### Manual builds
+
+Manual builds can be facilitated by running the `build-and-copy-to-sibling.sh` script.
 
 A clone of this repository must exist in a second location which is queried during the build.
 That clone shold be on branch `gh-pages` as this branch will be pushed to GitHub after the build.
