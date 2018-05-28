@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.corpus-tools.p2</groupId>
   <artifactId>site</artifactId>
-  <version>1.2.0</version>
+  <version>1.2.1</version>
   <packaging>pom</packaging>
   <properties>
     <pepper.version>3.1.0</pepper.version>
@@ -31,7 +31,10 @@
                 <artifact><id>org.slf4j:slf4j-ext:1.7.25</id></artifact>
 
                 <!-- Salt extensions -->
-                <artifact><id>org.corpus-tools:salt-extensions:${salt.version}</id></artifact>
+                <artifact>
+                  <id>org.corpus-tools:salt-extensions:${salt.version}</id>
+                  <source>true</source>
+                </artifact>
 
                 <!-- Pepper (for Atomic) and dependencies -->
                 <artifact>
