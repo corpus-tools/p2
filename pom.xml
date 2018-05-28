@@ -3,10 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.corpus-tools.p2</groupId>
   <artifactId>site</artifactId>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
   <packaging>pom</packaging>
   <properties>
     <pepper.version>3.1.0</pepper.version>
+    <salt.version>3.3.1</salt.version>
     <graphannis.version>0.6.0</graphannis.version>
   </properties>
   <build>
@@ -27,6 +28,10 @@
                 <artifact><id>net.sdruskat:net.sdruskat.fragment.sun.misc:1.0.0</id></artifact>
                 <artifact><id>org.antlr:antlr4-runtime:4.6</id><source>true</source></artifact>
                 <artifact><id>org.apache.logging.log4j:log4j-slf4j-impl:2.11.0</id></artifact>
+                <artifact><id>org.slf4j:slf4j-ext:1.7.25</id></artifact>
+
+                <!-- Salt extensions -->
+                <artifact><id>org.corpus-tools:salt-extensions:${salt.version}</artifactId>
 
                 <!-- Pepper (for Atomic) and dependencies -->
                 <artifact>
