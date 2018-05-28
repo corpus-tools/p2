@@ -31,7 +31,7 @@
                 <artifact><id>org.slf4j:slf4j-ext:1.7.25</id></artifact>
 
                 <!-- Salt extensions -->
-                <artifact><id>org.corpus-tools:salt-extensions:${salt.version}</artifactId>
+                <artifact><id>org.corpus-tools:salt-extensions:${salt.version}</id></artifact>
 
                 <!-- Pepper (for Atomic) and dependencies -->
                 <artifact>
