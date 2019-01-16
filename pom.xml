@@ -40,18 +40,18 @@
                   <transitive>true</transitive>
                   <source>true</source>
                   <excludes>
-                    <exclude>org.eclipse.equinox:ds::</exclude>
-                    <exclude>org.eclipse.core:jobs::</exclude>
-                    <exclude>org.eclipse.emf:org.eclipse.emf.ecore::</exclude>
-                    <exclude>org.eclipse.core:contenttype::</exclude>
-                    <exclude>org.eclipse.core:runtime::</exclude>
-                    <exclude>org.eclipse.emf:org.eclipse.emf.common::</exclude>
-                    <exclude>org.eclipse.emf:org.eclipse.emf.ecore.xmi::</exclude>
-                    <exclude>org.eclipse.equinox:app::</exclude>
-                    <exclude>org.eclipse.equinox:common::</exclude>
-                    <exclude>org.eclipse.equinox:registry::</exclude>
-                    <exclude>org.eclipse:osgi::</exclude>
-                    <exclude>org.eclipse.equinox:preferences::</exclude>
+                    <exclude>org.eclipse.equinox:ds:</exclude>
+                    <exclude>org.eclipse.core:jobs:</exclude>
+                    <exclude>org.eclipse.emf:org.eclipse.emf.ecore:</exclude>
+                    <exclude>org.eclipse.core:contenttype:</exclude>
+                    <exclude>org.eclipse.core:runtime:</exclude>
+                    <exclude>org.eclipse.emf:org.eclipse.emf.common:</exclude>
+                    <exclude>org.eclipse.emf:org.eclipse.emf.ecore.xmi:</exclude>
+                    <exclude>org.eclipse.equinox:app:</exclude>
+                    <exclude>org.eclipse.equinox:common:</exclude>
+                    <exclude>org.eclipse.equinox:registry:</exclude>
+                    <exclude>org.eclipse:osgi:</exclude>
+                    <exclude>org.eclipse.equinox:preferences:</exclude>
                   </excludes>
                 </artifact>
 
@@ -63,7 +63,8 @@
                   <id>org.corpus-tools:graphannis-api:${graphannis.version}</id>
                   <source>true</source>
                   <excludes>
-                    <exclude>org.bytedeco:javacpp::</exclude>  
+                    <exclude>org.bytedeco:javacpp:</exclude>  
+                    <exclude>org.corpus-tools:salt*:</exclude>  
                   </excludes>
                 </artifact>
 
