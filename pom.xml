@@ -7,6 +7,9 @@
   <packaging>pom</packaging>
   <properties>
     <pepper.version>3.2.7</pepper.version>
+    <!-- Dedicated Salt version, which is needed to resolve salt-extensions, which are
+         not part of pepper-framework. This version *must* be the version that is used 
+         by the respective Pepper version (above), to avoid conflicting dependencies. -->
     <salt.version>3.3.6</salt.version>
     <graphannis.version>0.6.0</graphannis.version>
   </properties>
