@@ -8,7 +8,8 @@ The branch where the POM (i.e., the target definition) is kept is [`master`](htt
 
 ## Build
 
-Travis takes care of the build and deploys the P2 repo to the `gh-pages` branch of the repository.
+Travis takes care of the build and deploys the P2 repo to the `gh-pages` branch 
+of the repository: <https://travis-ci.org/corpus-tools/p2>.
 
 ### Manual builds
 
