@@ -7,7 +7,7 @@
   <packaging>pom</packaging>
   <properties>
     <pepper.version>3.1.2-SNAPSHOT</pepper.version>
-    <salt.version>3.3.3-SNAPSHOT</salt.version>
+    <salt.version>3.3.6</salt.version>
     <graphannis.version>0.6.0</graphannis.version>
   </properties>
   <build>
