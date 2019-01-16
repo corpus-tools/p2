@@ -33,12 +33,7 @@
                 <artifact><id>org.apache.logging.log4j:log4j-slf4j-impl:2.11.0</id></artifact>
                 <artifact><id>org.slf4j:slf4j-ext:1.7.25</id></artifact>
 
-                <!-- Salt extensions -->
-                <artifact>
-                  <id>org.corpus-tools:salt-extensions:${salt.version}</id>
-                  <source>true</source>
-                </artifact>
-
+<!--  -->
                 <!-- Pepper (for Atomic) and dependencies -->
                 <artifact>
                   <id>org.corpus-tools:pepper-lib:${pepper.version}</id>
