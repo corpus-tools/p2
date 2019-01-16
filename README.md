@@ -4,25 +4,12 @@ In order to use the plugins and features contained in this repository, simply ad
 
 The branch for the actual repository on GitHub is [`gh-pages`](https://github.com/corpus-tools/p2/tree/gh-pages)!
 
-The branch where build script and POM are kept is [`master`](https://github.com/corpus-tools/p2/tree/master)!
+The branch where the POM (i.e., the target definition) is kept is [`master`](https://github.com/corpus-tools/p2/tree/master)!
 
 ## Build
 
-For the corpus-tools-p2 site, changes are picked up by Jenkins and deployed.
+Travis takes care of the build and deploys the P2 repo to the `gh-pages` branch of the repository.
 
 ### Manual builds
 
-Manual builds can be facilitated by running the `build-and-copy-to-sibling.sh` script.
-
-A clone of this repository must exist in a second location which is queried during the build.
-That clone shold be on branch `gh-pages` as this branch will be pushed to GitHub after the build.
-
-So, the set up shold be something like this:
-
-- Cloned repo in `/corpus-tools-p2/` on branch `master`
-- Second cloned repo in `/corpus-tools-p2-clone/` on branch `gh-pages`
-
-Then
-
-1. Run script in `/corpus-tools-p2/`
-2. Push `/corpus-tools-p2-clone/`
+Manual builds can be facilitated by running `mvn clean p2:site` in the `master` root.
