@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.corpus-tools.p2</groupId>
 	<artifactId>site</artifactId>
-	<version>1.4.0</version>
+	<version>1.5.0</version>
 	<packaging>pom</packaging>
 	<properties>
 		<pepper.version>3.2.7</pepper.version>
@@ -81,15 +81,6 @@
 										<exclude>org.bytedeco:javacpp:</exclude>
 										<exclude>org.corpus-tools:salt*:</exclude>
 									</excludes>
-								</artifact>
-								<!-- Third-party dependencies -->
-								<artifact>
-									<id>org.eclipse.collections:eclipse-collections-api:8.1.0-SNAPSHOT</id>
-									<transitive>true</transitive>
-								</artifact>
-								<artifact>
-									<id>org.eclipse.collections:eclipse-collections:8.1.0-SNAPSHOT</id>
-									<transitive>true</transitive>
 								</artifact>
 							</artifacts>
 						</configuration>
